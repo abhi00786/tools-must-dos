@@ -1,0 +1,4 @@
+Introduction to Version Control: What is Git and GitHub, and the basics of version control systems.
+Working with Git: Commits, branches, merges, understanding commit messages, and handling file states (untracked, staged, committed).
+Advanced Git Concepts: Pre-commit hooks, Git workflows specific to DevOps needs, and scenario-based examples.
+Automating Workflows with GitHub Actions: How to use GitHub Actions for CI/CD pipelines.
