@@ -1,0 +1,43 @@
+# 🐧 Linux & Docker Short Flags Cheat Sheet
+
+A quick reference guide for commonly used short command-line flags in **Docker** and **Linux**.
+
+---
+
+## 🐳 Docker Command Flags
+
+| Short Flag | Long Form | Description | Example |
+|-------------|------------|--------------|----------|
+| `-d` | `--detach` | Run container in the background (detached mode) | `docker run -d nginx` |
+| `-it` | `--interactive --tty` | Run interactively with terminal access | `docker run -it ubuntu bash` |
+| `-p` | `--publish` | Map container port to host port (`host:container`) | `-p 8080:80` |
+| `-e` | `--env` | Set environment variable inside container | `-e MYSQL_ROOT_PASSWORD=root` |
+| `-v` | `--volume` | Mount host directory or file inside container | `-v /data:/var/lib/mysql` |
+| *(none)* | `--name` | Assign a custom name to the container | `--name my-container` |
+| *(none)* | `--rm` | Automatically remove container when it stops | `docker run --rm ubuntu` |
+| `-a` | `--attach` | Attach to container’s output streams | `docker run -a stdout nginx` |
+| `-f` | `--force` | Force an action (e.g., image removal) | `docker rmi -f image_id` |
+
+---
+
+## 🧠 Common Linux Command Flags
+
+| Short Flag | Description | Example |
+|-------------|--------------|----------|
+| `-l` | Long listing format (detailed info) | `ls -l` |
+| `-a` | Show all files, including hidden | `ls -a` |
+| `-h` | Human-readable output (e.g. file sizes) | `ls -lh` |
+| `-r` | Reverse order | `ls -lr` |
+| `-R` | Recursive (include subdirectories) | `ls -R` |
+| `-f` | Force operation (ignore warnings) | `rm -f file.txt` |
+| `-i` | Interactive mode (ask before action) | `rm -i file.txt` |
+| `-v` | Verbose mode (show actions) | `cp -v file1 file2` |
+| `-t` | Sort by time (in `ls`) or allocate TTY (in Docker) | `ls -lt`, `docker run -t` |
+| `-n` | Numbered output (like line numbers) | `cat -n file.txt` |
+
+---
+
+## 🧩 Example: Docker Command Breakdown
+
+```bash
+docker run -d -p 8080:80 -e ENV=prod --name webapp nginx
