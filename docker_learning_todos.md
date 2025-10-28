@@ -14,8 +14,8 @@
 - [ ] Orchestrating Docker with Kubernetes (Introduction)
 
 ## Practice Projects
-- [ ] Project 1
-- [ ] Project 2
+- [ ] Web-application app via django, nginx and mysql
+- [ ] 3-tier application with thymeleaf, springboot and mysql
 
 ## Bonus Topics
 - [ ] Domain Name Mapping
